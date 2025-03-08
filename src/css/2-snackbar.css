@@ -1,0 +1,51 @@
+.input-lbl {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-lbl input {
+  border: 1px solid #cecdcd;
+  border-radius: 4px;
+  padding: 0.5rem 0.5rem;
+  outline: transparent;
+  transition: all 250ms ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.input-lbl input:hover {
+  border: 1px solid #8a8a8a;
+}
+
+.input-lbl input:focus {
+  border: 1px solid #4e75ff;
+}
+
+form fieldset {
+  border-radius: 4px;
+  border: 1px solid #cecdcd;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  background-color: white;
+  margin-bottom: 1.5rem;
+  transition: all 250ms ease-in-out;
+}
+
+form fieldset:hover {
+  border: 1px solid #8a8a8a;
+}
+
+form button {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  border: transparent;
+  background: #4e75ff;
+  color: white;
+  transition: all 250ms ease-in-out;
+}
+
+form button:hover {
+  background: #6c8cff;
+}

@@ -4,6 +4,8 @@ import 'flatpickr/dist/themes/material_blue.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+export default iziToast;
+
 let userSelectedDate = null;
 let indexInterval = null;
 
@@ -89,7 +91,7 @@ function validateDate(date) {
   }
 }
 
-const calendar = flatpickr(input, {
+flatpickr(input, {
   enableTime: true,
   time_24hr: true,
   defaultDate: new Date(),
@@ -117,7 +119,7 @@ function convertMs(ms) {
   };
 }
 
-function errorMessage() {
+const errorMessage = () => {
   iziToast.show({
     message: 'Please choose a date in the future',
     color: 'red',
@@ -126,9 +128,9 @@ function errorMessage() {
     timeout: 1500,
     position: 'topCenter',
   });
-}
+};
 
-function endMessage() {
+const endMessage = () => {
   iziToast.show({
     message: 'Time is up. Please choose a date',
     color: 'green',
@@ -137,4 +139,4 @@ function endMessage() {
     timeout: 1000000,
     position: 'bottomCenter',
   });
-}
+};
