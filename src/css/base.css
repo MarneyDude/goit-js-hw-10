@@ -29,10 +29,24 @@ body {
 
 main {
   width: 19rem;
-  margin: 0 auto;
-  padding: 5rem 0;
+  margin: auto auto;
+  align-items: center;
 }
 
 main:has(.back-link) {
   text-align: center;
+}
+
+.task-1 {
+  display: block;
+  margin-bottom: 2rem;
+  transition: all 150ms ease-in-out;
+}
+
+.task-2 {
+  transition: all 150ms ease-in-out;
+}
+.task-1:hover,
+.task-2:hover {
+  color: rgb(91, 177, 206);
 }
