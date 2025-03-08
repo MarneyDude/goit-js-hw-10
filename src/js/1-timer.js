@@ -121,22 +121,28 @@ function convertMs(ms) {
 
 const errorMessage = () => {
   iziToast.show({
+    title: 'WARNING',
+    titleColor: 'white',
+    iconUrl: `https://img.icons8.com/?size=100&id=6734ErbSl05C&format=png&color=FFFFFF`,
+    iconColor: 'white',
     message: 'Please choose a date in the future',
-    color: 'red',
-    messageColor: 'black',
+    color: '#fca503',
+    messageColor: 'white',
     messageSize: '18',
-    timeout: 1500,
-    position: 'topCenter',
+    timeout: 4000,
+    position: 'topRight',
   });
 };
 
 const endMessage = () => {
   iziToast.show({
-    message: 'Time is up. Please choose a date',
-    color: 'green',
-    messageColor: 'black',
-    messageSize: '22',
+    title: 'TIME IS UP',
+    titleColor: 'white',
+    message: ' Please choose a date',
+    color: '#00c234',
+    messageColor: 'white',
+    messageSize: '18',
     timeout: 1000000,
-    position: 'bottomCenter',
+    position: 'topRight',
   });
 };

@@ -43,8 +43,8 @@ const success = delay => {
     color: '#5ac40c',
     messageColor: 'white',
     messageSize: '16',
-    timeout: 2000,
-    position: 'topCenter',
+    timeout: 4000,
+    position: 'topRight',
   });
 };
 
@@ -58,8 +58,8 @@ const negative = delay => {
     color: '#d1530f',
     messageColor: 'white',
     messageSize: '16',
-    timeout: 2000,
-    position: 'topCenter',
+    timeout: 4000,
+    position: 'topRight',
   });
 };
 const error = () => {
@@ -72,7 +72,7 @@ const error = () => {
     color: '#f80404',
     messageColor: 'white',
     messageSize: '16',
-    timeout: 2000,
-    position: 'topCenter',
+    timeout: 4000,
+    position: 'topRight',
   });
 };
