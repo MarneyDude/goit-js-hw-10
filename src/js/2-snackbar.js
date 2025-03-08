@@ -37,6 +37,7 @@ function submit(event) {
 const success = delay => {
   iziToast.show({
     title: 'OK',
+    iconUrl: `https://img.icons8.com/?size=100&id=12402&format=png&color=FFFFFF`,
     titleColor: 'white',
     message: `Fulfilled promise in ${delay}ms`,
     color: '#5ac40c',
@@ -50,6 +51,8 @@ const success = delay => {
 const negative = delay => {
   iziToast.show({
     title: 'REJECTED',
+    iconUrl: `https://img.icons8.com/?size=100&id=6734ErbSl05C&format=png&color=FFFFFF`,
+    iconColor: 'white',
     titleColor: 'white',
     message: `promise in ${delay}ms`,
     color: '#d1530f',
@@ -62,6 +65,7 @@ const negative = delay => {
 const error = () => {
   iziToast.show({
     title: 'ERROR',
+    iconUrl: `https://img.icons8.com/?size=100&id=24552&format=png&color=FFFFFF`,
     titleColor: 'white',
     iconColor: 'white',
     message: 'Illegal operation',
