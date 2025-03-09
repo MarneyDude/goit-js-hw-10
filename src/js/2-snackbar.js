@@ -10,7 +10,8 @@ function submit(event) {
   const formData = new FormData(form);
 
   const status = formData.get('state');
-  const delay = formData.get('delay');
+  let delay = formData.get('delay');
+  delay = Number(delay);
 
   if (isNaN(delay) || delay <= 0) {
     error();
@@ -46,6 +47,8 @@ const success = delay => {
     timeout: 4000,
     position: 'topRight',
   });
+
+  return delay;
 };
 
 const negative = delay => {
@@ -61,6 +64,8 @@ const negative = delay => {
     timeout: 4000,
     position: 'topRight',
   });
+
+  return delay;
 };
 const error = () => {
   iziToast.show({

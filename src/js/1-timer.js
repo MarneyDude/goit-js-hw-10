@@ -99,10 +99,6 @@ flatpickr(input, {
   onClose(selectedDates) {
     validateDate(selectedDates[0]);
   },
-
-  onChange(selectedDates) {
-    validateDate(selectedDates[0]);
-  },
 });
 
 function convertMs(ms) {
